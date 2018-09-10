@@ -12,6 +12,8 @@ checkNpmVersions({ 'simpl-schema': '>=0.0.0' }, 'aldeed:collection2');
 
 const SimpleSchema = require('simpl-schema').default;
 
+SimpleSchema.extendOptions(['autoform']);
+
 // Exported only for listening to events
 const Collection2 = new EventEmitter();
 
